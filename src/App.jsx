@@ -27,8 +27,8 @@ const Banner = ({ title }) => (
 
 const Main = () =>  {
   
-  const [schedule, isLoading, error] = useData('/schedule', addScheduleTimes);
-  
+  const [schedule, isLoading, error] = useData('/courses', addScheduleTimes);
+  console.log(schedule,'scheudle')
   if (error) return <h1>error</h1>;
   if (isLoading) return <h1>Loading the schedule...</h1>
 
